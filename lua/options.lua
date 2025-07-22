@@ -69,5 +69,9 @@ vim.opt.expandtab = true
 
 vim.opt.swapfile = false
 vim.opt.backup = false
+vim.opt.undodir = os.getenv 'HOME' .. '/.vim/undodir'
+vim.opt.undofile = true
+
+vim.opt.colorcolumn = '80,120'
 
 -- vim: ts=2 sts=2 sw=2 et
